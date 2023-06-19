@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: hsl(233, 47%, 7%);
+}
+
+img{
+    width: 100%;
+    background: hsl(277, 64%, 61%);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: .5em;
+    overflow: hidden;
+    width: 300px;
+    max-width: 90%;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card-top{
+    position: relative;
+}
+
+.card-top::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(277, 64%, 61%, 0.6);
+}
+
+.card-body{
+    text-align: center;
+    padding: 2em 2em 1.5em;
+}
+
+.heading{
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+}
+
+.heading span{
+    color: hsl(277, 64%, 61%);
+}
+
+.card-body .text{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    padding: 1.25em 0;
+}
+
+.stats-container{
+   color:  hsl(0, 0%, 100%);
+   display: flex;
+   flex-direction: column;
+}
+
+.stats{
+    padding: .8em 0;
+}
+
+.stats-heading,
+.stats-num-queries{
+    text-transform: uppercase;
+}
+
+.stats-num{
+    margin-bottom: .2em;
+}
+
+.stats-heading{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 760px){
+    
+    img{
+        display: none;
+    }
+
+    .card{
+        width: 700px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card-top,
+    .card-body{
+        width: 50%;
+    }
+
+    .card-top{
+        position: relative;
+        background-image: url(images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+
+    .card-body{
+        text-align: left;
+        padding: 3em;
+    }
+
+    .card-body .text{
+        line-height: 1.4;
+    }
+
+    .stats-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+} */
